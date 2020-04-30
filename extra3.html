@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZeeKwet BookStore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="font.css">
+    <script type="text/javascript" src="custom.js"></script>
+
+    <style type="text/css">
+        .profileimage {
+          position: relative;
+          width: 100%;
+          max-width: 400px;
+      }
+
+      /* The overlay effect (full height and width) - lays on top of the container and over the image */
+      .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .3s ease;
+      }
+      .profileimage img{
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+
+      /* When you mouse over the container, fade in the overlay icon*/
+      .profileimage:hover .overlay {
+          opacity: 1;
+      }
+      .profileimage:hover img {
+          opacity: 0.3;
+      }
+
+      /* The icon inside the overlay is positioned in the middle vertically and horizontally */
+      .icon1 {
+          font-size: 50px;
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
+          color: #717171;
+      }
+
+      /* When you move the mouse over the icon, change color */
+      .fa-facebook-square:hover {
+          color: black;
+      }
+  </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="profileimage">
+            <img src="image/profile8.jpg" class="image">
+            <div class="overlay">
+                <a href="#" class="icon1">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="profileimage">
+                        <img src="image/profile8.jpg" class="card-img-top rounded-circle img-fluid">
+                        <div class="overlay">
+                            <a href="#" class="icon1">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Name: Raject<br>
+                            Email: raject@gmail.com<br>
+                            Position: HR Manager<br>
+                            Address: Yangon
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

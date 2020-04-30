@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZeeKwet BookStore</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="font.css">
+	<script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+	<div id="nav" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">ZEEKWET</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fas fa-bars" style="color:#305663; font-size:28px;"></i>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="book.html">Books</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">AboutUs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="checkout.html">
+                                    <span>
+                                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                            </span>
+                                    (<span id="count"></span>)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.html">SignIn | SignUp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="page-banner" class="col-lg-12 col-md-12 col-sm-12 text-center">
+                <h4>Book Lists</h4>
+            </div>
+        </div>
+    </div>
+    <div class="item container mt-4">
+        <div class="row">
+         <div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+            <a href="bookview.html"><img src="image/image2.jpg" class="img-fluid" for="book1"></a><br>
+            The Adventures of Tintin, Vol. 1<br>
+            <span class="price">$15</span> | <button class="addtocart" data-id="1" data-name="The Adventures of Tintin, Vol. 1" data-price="15">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+            <a href="bookview.html"><img src="image/image1.jpg" class="img-fluid"></a><br>
+            The Adventures of Tintin, Vol. 2<br>
+            <span class="price">$15</span> | <button  class="addtocart" data-id="2" data-name="The Adventures of Tintin, Vol. 2" data-price="15">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+            <a href="bookview.html"><img src="image/image3.jpg" class="img-fluid"></a><br>
+            The Adventures of Tintin, Vol. 3<br>
+            <span class="price">$16</span> | <button  class="addtocart" data-id="3" data-name="The Adventures of Tintin, Vol. 3" data-price="16">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+            <a href="bookview.html"><img src="image/image4.jpg" class="img-fluid"></a><br>
+            The Adventures of Tintin, Vol. 4<br>
+            <span class="price">$19</span> | <button  class="addtocart" data-id="4" data-name="The Adventures of Tintin, Vol. 4" data-price="19">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-5">
+            <a href="bookview.html"><img src="image/image5.jpg" class="img-fluid"></a><br>
+            Magnolia Table: A Collection of Recipes for Gathering<br>
+            <span class="price">$16</span> | <button  class="addtocart" data-id="5" data-name="Magnolia Table: A Collection of Recipes for Gathering" data-price="16">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-5">
+            <a href="bookview.html"><img src="image/image6.jpg" class="img-fluid"></a><br>
+            Magnolia Table, Volume 2: A Collection of Recipes for Gathering<br>
+            <span class="price">$21</span> | <button class="addtocart" data-id="6" data-name="Magnolia Table, Volume 2: A Collection of Recipes for Gathering" data-price="21">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-5">
+            <a href="bookview.html"><img src="image/image7.jpg" class="img-fluid"></a><br>
+            The Prairie Homestead Cookbook: Simple Recipes for Heritage Cooking in Any Kitchen<br>
+            <span class="price">$16</span> | <button class="addtocart" data-id="7" data-name="The Prairie Homestead Cookbook: Simple Recipes for Heritage Cooking in Any Kitchen" data-price="16">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-5">
+            <a href="bookview.html"><img src="image/image8.jpg" class="img-fluid"></a><br>
+            Nothing Fancy: Unfussy Food for Having People Over<br>
+            <span class="price">$21</span> | <button class="addtocart" data-id="8" data-name="Nothing Fancy: Unfussy Food for Having People Over" data-price="21">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-5">
+            <a href="bookview.html"><img src="image/image9.jpg" class="img-fluid"></a><br>
+            The Hope of Glory: Reflections on the Last Words of Jesus from the Cross<br>
+            <span class="price">$15</span> | <button class="addtocart" data-id="9" data-name="The Hope of Glory: Reflections on the Last Words of Jesus from the Cross" data-price="15">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-5">
+            <a href="bookview.html"><img src="image/image10.jpg" class="img-fluid"></a><br>
+            A Woman of No Importance: The Untold Story of the American Spy Who Helped Win World War II<br>
+            <span class="price">$14</span> | <button class="addtocart" data-id="10" data-name="A Woman of No Importance: The Untold Story of the American Spy Who Helped Win World War II" data-price="14">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-5">
+            <a href="bookview.html"><img src="image/image11.jpg" class="img-fluid"></a><br>
+            The Pioneers: The Heroic Story of the Settlers Who Brought the American Ideal West<br>
+            <span class="price">$15</span> | <button class="addtocart" data-id="11" data-name="The Pioneers: The Heroic Story of the Settlers Who Brought the American Ideal West" data-price="15">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-5">
+            <a href="bookview.html"><img src="image/image12.jpg" class="img-fluid"></a><br>
+            The Spy and the Traitor: The Greatest Espionage Story of the Cold War<br>
+            <span class="price">$13</span> | <button class="addtocart" data-id="12" data-name="The Spy and the Traitor: The Greatest Espionage Story of the Cold War" data-price="13">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-5">
+            <a href="bookview.html"><img src="image/image13.jpg" class="img-fluid"></a><br>
+            Becoming<br>
+            <span class="price">$11</span> | <button class="addtocart" data-id="13" data-name="Becoming" data-price="11">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-5">
+            <a href="bookview.html"><img src="image/image14.jpg" class="img-fluid"></a><br>
+            Licensed to Lie<br>
+            <span class="price">$17</span> | <button class="addtocart" data-id="14" data-name="Licensed to Lie" data-price="17">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-5">
+            <a href="bookview.html"><img src="image/image15.jpg" class="img-fluid"></a><br>
+            Why Nations Fail: The Origins of Power, Prosperity, and Poverty<br>
+            <span class="price">$14</span> | <button class="addtocart" data-id="15" data-name="Why Nations Fail: The Origins of Power, Prosperity, and Poverty" data-price="14">Buy Now</button>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-5">
+            <a href="bookview.html"><img src="image/image16.jpg" class="img-fluid"></a><br>
+            Just Mercy: A Story of Justice and Redemption<br>
+            <span class="price">$14</span> | <button class="addtocart" data-id="16" data-name="Just Mercy: A Story of Justice and Redemption" data-price="14">Buy Now</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 mt-5 mb-3">
+            <nav class="pagechanger" aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+</div>
+</div>
+</div>
+<div id="footer" class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-lg-3 mt-5">
+            <h4>About Us</h4>
+            <p>We are the online book store which serves customers with great varities of books. We also deliver the books to the customer with care without having the damages.
+            </p>
+            <div class="share">
+                
+                <span class="instagram"><i class="fab fa-instagram"></i></span>
+                <span class="twitter"><i class="fab fa-twitter"></i></span>
+                <span class="facebook"><i class="fab fa-facebook"></i></span>
+            </div>
+        </div>
+        <div class="col-lg-3 mt-5">
+            <h4>Popular Categories</h4>
+            <ul class="sub-nav">
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Thriller</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Sci-Fi</a></li>
+                <li><a href="#">Fantansy</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 mt-5">
+            <h4>Quick Links</h4>
+            <ul class="sub-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Books</a></li>
+                <li><a href="about.html">AboutUs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 mt-5">
+            <h4>Have a Questions?</h4>
+            <p>zeekwet@gmail.com</p>
+            <p>0978954168</p>
+            <p>info@yourdomain.com</p>
+        </div>
+        <div class="col-lg-12 mt-3 text-center">
+            <p>Copyright @ 2019 | Made with .....</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        count();
+        $(".addtocart").click(function()
+        {
+            var id=$(this).data('id');
+            var name=$(this).data('name');
+            var price=$(this).data('price');
+
+            var book={id:id,name:name,price:price,qty:1}
+            var store_str=localStorage.getItem("book_shop");
+            var store_arr;
+            if (store_str==null) 
+            {
+                store_arr=Array();
+            }
+            else
+            {
+                store_arr=JSON.parse(store_str);
+            }
+
+            var status=false;
+            $.each(store_arr,function(a,b)
+            {
+                if (id==b.id) 
+                {
+                    status=true;
+                    b.qty++;
+                }
+            })
+            if (status==false)
+            {
+                store_arr.push(book);
+            }
+
+            var storedata=JSON.stringify(store_arr);
+            localStorage.setItem("book_shop",storedata);
+            count();
+        })
+    })
+</script>
+
+</body>
+</html>

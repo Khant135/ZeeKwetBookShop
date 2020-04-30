@@ -1,0 +1,453 @@
+*{
+  font-family: 'a';
+  line-height: 30px;
+}
+h1,h2,h3,h4,h5{
+  font-family: 'c';
+}
+
+  div#nav{
+    background-color: #fcba68;
+    font-size: 18px;
+  }
+  div a.navbar-brand{
+    color: black;
+  }
+  div a.navbar-brand:hover{
+    color: #305663;
+  }
+  li a.nav-link{
+    color: black;
+  }
+  li a.nav-link:hover{
+    color: #305663;
+  }
+
+  
+
+  div#banner{
+    background: linear-gradient(to bottom,rgba(218,165,146,.4)0,rgba(218,165,146,.4)100%),url(image/slideshow5.jpg);
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom:200px;
+  }
+  div#banner h4{
+    font-weight: 900;
+    color: #222;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  div#banner p{
+    font-size: 20px;
+    text-align: center;
+  }
+  .button-link{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 14px 20px;
+    background-color: #fcba68;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+  }
+  .button-link:hover{
+    background-color: black;
+    text-decoration: none;
+    color: #fcba68;
+  }
+
+  h3 {
+    line-height: 1.66;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    color: #222;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px; 
+  }
+
+  .icon {
+    width: 65px;
+    height: 65px;
+    border: 1px solid #cbcbcb;
+    display: block;
+    border-radius: 50%;
+    margin-top: -33px;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 22px;
+    vertical-align: middle;
+    padding: 15px 0;
+    color: #ffaf00;
+    margin-bottom: 30px; }
+
+    h5.icon-header{
+      font-weight: 600;
+    }
+
+    div.mySlides q {
+      font-size: 30px;
+      font-family: 'b';
+    }
+
+    div.mySlides p.author {
+      color: cornflowerblue;
+      font-size: 20px;
+      font-family: 'b';
+      margin-top: 20px;
+    }
+    .slideshow-container {
+      position: relative;
+      background: #fff;
+    }
+
+    .mySlides {
+      display: none;
+      padding: 80px;
+      text-align: center;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -30px;
+      padding: 16px;
+      color: #717171;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      position: absolute;
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      color: #fcba68;
+    }
+
+    .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #fcba68;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .dot.active, .dot:hover {
+      background-color: #717171;
+    }
+
+    #footer{
+      background-color: #fcba68;
+    }
+
+    .sub-nav li a{
+      color: black;
+      text-decoration: underline;
+    }
+    .sub-nav li a:hover{
+      color: #305663;
+    }
+
+    #footer h4{
+      font-weight: 600; 
+    }
+
+    div#page-banner{
+      background: linear-gradient(to bottom,rgba(218,165,146,.4)0,rgba(218,165,146,.4)100%),url(image/slideshow4.jpg);
+      width: 100%;
+      height: 50vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-top: 150px;
+      padding-bottom:200px;
+    }
+    div#page-banner h4{
+      font-weight: 900;
+      color: #222;
+      font-size: 40px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .divider{
+      /*1 rem=16p*/
+      max-width: 30rem;
+      border-width: .2rem;
+      border-color: #305663; /*#fff*/
+    }
+
+
+    .profileimage {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    /* The overlay effect (full height and width) - lays on top of the container and over the image */
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .3s ease;
+    }
+    .profileimage img{
+      opacity: 1;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    /* When you mouse over the container, fade in the overlay icon*/
+    .profileimage:hover .overlay {
+      opacity: 1;
+    }
+    .profileimage:hover img {
+      opacity: 0.3;
+    }
+
+    /* The icon inside the overlay is positioned in the middle vertically and horizontally */
+    .icon1 {
+      font-size: 50px;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+      color: #717171;
+    }
+
+    /* When you move the mouse over the icon, change color */
+    .fa-facebook-square:hover {
+      color: black;
+    }
+
+    form.feedback input{
+      border-radius: 5px;
+    }
+
+    form.feedback textarea{
+      border-radius: 5px;
+    }
+
+    form.feedback button{
+      padding: 10px 15px;
+      border-radius: 20px;
+      border: none;
+      background-color: #fcba68;
+      color: black;
+    }
+
+    form.feedback button:hover{
+      background-color: black;
+      color: #fcba68;
+    }
+
+    div.item button{
+      padding: 5px 10px;
+      background-color: #fcba68;
+      color: black;
+      font-weight: bold;
+      border-radius: 20px;
+      border: none;
+    }
+
+    div.item button:hover{
+      background-color: black;
+      color: #fcba68;
+    }
+
+    div.item span.price{
+      color: red;
+    }
+
+    nav.pagechanger ul li{
+      padding: 5px 10px;
+    }
+    nav.pagechanger a{
+      border:none;
+      color: black;
+      background-color: none;
+      border-radius: 50%;
+    }
+    nav.pagechanger a:hover{
+      color: #fcba68;
+      background-color: black;
+    }
+
+    .wrap{
+      max-width: 350px;
+      border-radius: 20px;
+      margin: auto;
+      /*background: rgba(0,0,0,0.8);*/
+      box-sizing: border-box;
+      padding: 40px;
+      /*color:#fff;*/
+      margin-top: 50px;
+    }
+    div.wrap h3{
+      text-align: center;
+    }
+    .register-form input[type=text],input[type=password]{
+      width: 100%;
+      box-sizing:border-box;
+      padding: 12px 5px;
+      /*background: rgb(0,0,0,0.10);*/
+      outline:none;
+      border: none;
+      border-bottom: 1px solid;
+      /*color: #fff;*/
+      border-radius: 5px;
+      margin: 5px;
+      font-weight: bold; 
+    }
+    .register-form input[type=submit]{
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 0;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      outline: none;
+      border: none;
+      background-color: #fcba68;
+      border-radius: 20px;
+      font-size: 15px;
+      font-weight: 700;
+      color: black;
+    }
+
+    .register-form input[type=submit]:hover{
+      color: #fcba68;
+      background-color: black;
+    }
+
+    .login-form input[type=text],input[type=password]{
+      width: 100%;
+      box-sizing:border-box;
+      padding: 12px 5px;
+      /*background: rgb(0,0,0,0.10);*/
+      outline:none;
+      border: none;
+      border-bottom: 1px solid;
+      /*color: #fff;*/
+      border-radius: 5px;
+      margin: 5px;
+      font-weight: bold; 
+    }
+    .login-form input[type=submit]{
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 0;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      outline: none;
+      border: none;
+      background-color: #fcba68;
+      border-radius: 20px;
+      font-size: 15px;
+      font-weight: 700;
+      color: black;
+    }
+
+    .login-form input[type=submit]:hover{
+      color: #fcba68;
+      background-color: black;
+    }
+
+    button.order{
+      padding: 10px 15px;
+      border-radius: 20px;
+      border: none;
+      background-color: #fcba68;
+      color: black;
+    }
+
+    button.order:hover{
+      background-color: black;
+      color: #fcba68;
+    }
+
+    button.max, button.min{
+      border: none;
+      background-color: #fcba68;
+      border-radius: 20px;
+      color: black;
+    }
+
+    button.max:hover, button.min:hover{
+      border: none;
+      background-color: black;
+      border-radius: 20px;
+      color: #fcba68;
+    }
+
+    #footer .share {
+      text-align: left;
+      font-size: 25px;
+    }
+
+    #footer .share span {
+      padding: 0 5px;
+      cursor: pointer; 
+    }
+
+    .facebook:hover, .instagram:hover, .twitter:hover{
+      color: #ff9700;
+    }
+
+    .checked{
+      color: orange;
+    }
+
+    div.view button{
+      padding: 5px 10px;
+      background-color: #fcba68;
+      color: black;
+      font-weight: bold;
+      border-radius: 20px;
+      border: none;
+    }
+
+    div.view button:hover{
+      background-color: black;
+      color: #fcba68;
+    }
+
+    span.price{
+      color: red;
+    }
+
+
+
+
+
+

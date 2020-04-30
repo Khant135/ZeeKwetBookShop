@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="font.css">
+    <script type="text/javascript" src="custom.js"></script>
+
+	<link rel="stylesheet" href="owlcarousel/owlcarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<script src="owlcarousel/owlcarousel/docs/assets/vendors/jquery.min.js"></script>
+	<script src="owlcarousel/owlcarousel/docs/assets/vendors/jquery.mousewheel.min.js"></script>
+	<script src="owlcarousel/owlcarousel/dist/owl.carousel.min.js"></script>
+
+	<style type="text/css">
+		.owl-prev{
+			left: -30px;
+			text-decoration: none;
+		}
+		.owl-next{
+			right: -30px;
+			text-decoration: none;
+		}
+		.owl-prev, .owl-next{
+			position: absolute;
+			top: 30%;
+		}
+		.owl-prev span, .owl-next span{
+			font-size: 60px;
+			color: #787878;
+		}
+		.owl-theme .owl-nav [class="owl-"]:hover{
+			background-color: transparent;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="owl-carousel owl-theme">
+			<div class="item">
+				<a href=""><img src="image/image2.jpg" class="img-fluid"></a>
+			</div>
+			<div class="item">
+				<a href=""><img src="image/image2.jpg" class="img-fluid"></a>
+			</div>
+			<div class="item">
+				<a href=""><img src="image/image2.jpg" class="img-fluid"></a>
+			</div>
+			<div class="item">
+				<a href=""><img src="image/image2.jpg" class="img-fluid"></a>
+			</div>
+			<div class="item">
+				<a href=""><img src="image/image2.jpg" class="img-fluid"></a>
+			</div>
+			<div class="item">
+				<a href=""><img src="image/image2.jpg" class="img-fluid"></a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var owl = $('.owl-carousel');
+		owl.owlCarousel({
+			loop:true,
+			nav:true,
+			margin:10,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:3
+				},            
+				960:{
+					items:5
+				},
+				1200:{
+					items:6
+				}
+			}
+		});
+		owl.on('mousewheel', '.owl-stage', function (e) {
+			if (e.deltaY>0) {
+				owl.trigger('next.owl');
+			} else {
+				owl.trigger('prev.owl');
+			}
+			e.preventDefault();
+		});
+	</script>
+</body>
+</html>
